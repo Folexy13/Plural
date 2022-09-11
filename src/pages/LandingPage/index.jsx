@@ -21,7 +21,7 @@ function LandingPage() {
       <AnimatePresence exitBeforeEnter onExitComplete={() => setLoading(false)}>
         {loading && <Preloader />}
       </AnimatePresence>
-      <Header />
+      {!loading && <Header />}
       <Hero />
       <MissionCard />
       <MultiCard />
