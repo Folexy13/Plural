@@ -6,7 +6,6 @@ import { Carousel } from "react-responsive-carousel";
 import a from "../../assets/images/a.png";
 import b from "../../assets/images/b.png";
 import c from "../../assets/images/c.png";
-import { useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Hero = () => {
