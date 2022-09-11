@@ -10,8 +10,9 @@
     flex-direction: column;
     justify-content: center;
     top: 0;
-    align-items: center;
+    // align-items: center;
     background: #234e4a;
+    padding-left: 60px;
     border-right: 16px solid #ff715b;
     margin: auto;
     width: 50%;
@@ -25,7 +26,7 @@
       font-weight: 700;
       font-size: 64px;
       line-height: 64px;
-      text-align: center;
+      // text-align: center;
       color: #ffffff;
       width: 592px;
       margin: 20px 0;
@@ -43,7 +44,7 @@
       font-weight: 300;
       font-size: 24px;
       line-height: 36px;
-      text-align: center;
+      // text-align: center;
       color: #fff;
     }
   }
@@ -64,5 +65,8 @@
     /* .hero-title {
       margin-top: 20%;
     } */
+  }
+  .btn {
+    display: unset;
   }
 }

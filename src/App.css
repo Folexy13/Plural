@@ -52,7 +52,7 @@ body {
 .div1 {
   height: 100vh;
   width: 50;
-  background-color: #ee5d23;
+  background-color: #ff715b;
   animation: 12s forwards moveRight;
 }
 .div2 {
