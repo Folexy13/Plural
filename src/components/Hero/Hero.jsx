@@ -10,24 +10,6 @@ import { useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Hero = () => {
-  const arr = [
-    { title: "About Us", link: "/about" },
-    { title: "Our Services", link: "/service" },
-    { title: "Scroll Down", link: "/#mission" },
-  ];
-  const [title, setTitle] = useState(arr[1]);
-  const [index, setIndex] = useState(0);
-  useEffect(() => {
-    const timerId = setInterval(
-      () => setIndex((i) => (i + 1) % arr.length),
-      1700
-    );
-    return () => clearInterval(timerId);
-  });
-  useEffect(() => {
-    setTitle(arr[index]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index]);
   useEffect(() => {
     Aos.init({
       disable: window.innerWidth < 1251,
@@ -48,7 +30,7 @@ const Hero = () => {
           We believe in giving you the best medic care,you will never get
           anywhere
         </p>
-        <Button label={title.title} link={title.link} hasArrow />
+        <Button link={"/appointment"} />
       </div>
       <div
         className="hero-title2"
