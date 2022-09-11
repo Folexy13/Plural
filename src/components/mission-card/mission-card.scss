@@ -69,17 +69,16 @@
 }
 .care {
   background: #f6f8f8;
-  width: 72%;
+  // width: 72%;
   margin: 40px auto;
   @media (max-width: 1800px) {
-    width: 80%;
+    // width: 80%;
   }
   .grid {
-    display: grid;
+    display: flex;
     width: fit-content;
     margin: 100px auto;
     gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
   }
   .container {
     background: #fff;
@@ -123,14 +122,13 @@
   background: #f6f8f8;
   padding: 0 0 120px 0;
   .grid {
-    display: grid;
+    display: flex;
     width: 72%;
     margin: 100px auto;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     .container {
       width: 387px;
-      height: 278px;
+      min-height: 278px;
       padding: 30px;
       top: 2288px;
       background: #ffffff;
