@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.scss";
 import whiteLogo from "../../assets/images/whiteLogo.png";
-import { FlexIcon } from "..";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Footer = () => {

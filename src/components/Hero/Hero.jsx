@@ -26,6 +26,7 @@ const Hero = () => {
   });
   useEffect(() => {
     setTitle(arr[index]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
   useEffect(() => {
     Aos.init({
