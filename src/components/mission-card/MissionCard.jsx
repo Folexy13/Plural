@@ -23,7 +23,7 @@ function MissionCard() {
   return (
     <>
       <div
-        id="about"
+        id="mission"
         className="mission-card"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
