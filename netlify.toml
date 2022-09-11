@@ -6,33 +6,10 @@
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
-  #[[redirects]]
-  #  from = "/*"
-  #  to = "/index.html"
-  #  status = 200
-[[redirects]]
-  from = "/about"
-  to = "/about"
-  status = 301
-  force = false
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
-
   [[redirects]]
-  from = "/services"
-  to = "/services"
-  status = 301
-  force = false
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
-
-  [[redirects]]
-  from = "/appointment"
-  to = "/appointment"
-  status = 301
-  force = false
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+    from = "/*"
+    to = "/index.html"
+    status = 200
 
   ## (optional) Settings for Netlify Dev
   ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
