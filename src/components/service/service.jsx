@@ -99,7 +99,7 @@ function Service() {
               their optimum state of health and well-being.
             </p>
           </div>
-          <Button type={"header"} />
+          <Button type={"header"} link="/appointment" />
         </div>
       </div>
     </div>

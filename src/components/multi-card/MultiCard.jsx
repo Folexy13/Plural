@@ -29,7 +29,7 @@ function MultiCard({ type }) {
         data-aos-duration="2000"
       >
         <h1>We Have Been There. We Understand You</h1>
-        <Button />
+        <Button link={"/appointment"} />
       </div>
       <div className="testimonial">
         <div

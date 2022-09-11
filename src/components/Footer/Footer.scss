@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 0;
   .container {
     width: 80%;
     margin: auto;
@@ -38,7 +39,7 @@
       }
     }
     h1 {
-      border-left: 6px solid #ee5d23;
+      border-left: 6px solid #ff715b;
       padding-left: 40px;
       font-family: "Roboto";
       font-style: normal;
@@ -73,7 +74,7 @@
       border: none;
       outline: none;
       cursor: pointer;
-      background-color: #ee5d23;
+      background-color: #ff715b;
       height: 28px;
       width: 30px;
       color: #fff;
@@ -96,7 +97,7 @@
         list-style: none;
         margin: 10px 0;
         i {
-          color: #ee5d23;
+          color: #ff715b;
         }
       }
     }
@@ -114,7 +115,7 @@
     align-items: center;
     background: #fff;
     border-radius: 50%;
-    color: #ee5d23;
+    color: #ff715b;
   }
   p {
     text-align: center;
