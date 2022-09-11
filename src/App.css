@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background: #f6f8f8;
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100vw);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+}
+.div1 {
+  height: 100vh;
+  width: 50;
+  background-color: #ee5d23;
+  animation: 12s forwards moveRight;
+}
+.div2 {
+  width: 50%;
+  height: 100vh;
+  background-color: #003399;
+}
+#root {
+  overflow: hidden;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0%);
+    width: 50%;
+  }
+  50% {
+    transform: translateX(20%);
+    width: 40%;
+  }
+  100% {
+    float: right;
+    transform: translateX(50%);
+    width: 30%;
   }
 }

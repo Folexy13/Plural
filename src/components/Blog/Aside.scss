@@ -1,0 +1,78 @@
+.aside_post {
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+
+  @media only screen and (max-width: 885px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+  }
+
+  h4 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    color: #234e4a;
+  }
+
+  .img-text_container {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+
+    .img1 {
+      width: inherit;
+      height: 100px;
+      background: url(/assets/images/orange-stroke2.png);
+      background-size: auto;
+    }
+    .img2 {
+      width: inherit;
+      height: 100px;
+      background: url(/assets/images/orange-stroke3.png);
+      background-size: auto;
+    }
+    .img3 {
+      width: inherit;
+      height: 100px;
+      background: url(/assets/images/orange-stroke4.png);
+      background-size: cover;
+    }
+    .img4 {
+      width: inherit;
+      height: 100px;
+      background: url(/assets/images/Rectangle32.png);
+      background-size: cover;
+    }
+
+    .texts {
+      background-color: #234e4a;
+      width: inherit;
+      height: 82px;
+      border-radius: 0px 0px 12px 12px;
+      margin-top: -20px;
+
+      p {
+        padding: 10px 10px 0px 10px;
+        width: 180px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      #arrow-right {
+        color: #ee5d23;
+        float: right;
+        margin-right: 10px;
+      }
+    }
+  }
+}

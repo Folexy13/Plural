@@ -1,0 +1,108 @@
+.about {
+  .heading {
+    height: 300px;
+    background: #234e4a;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    mix-blend-mode: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .dx {
+      border-bottom: 2px solid #fff;
+    }
+  }
+  .dy {
+    border-bottom: 2px solid #ff715b;
+    width: 100px;
+    margin-bottom: 30px;
+  }
+  .body {
+    padding: 100px 0px;
+    min-height: 80vh;
+    .flex {
+      width: 72%;
+      margin: 80px auto;
+      display: flex;
+      justify-content: space-between;
+      &:not(:first-child) {
+        margin: 387px auto;
+      }
+      @media (max-width: 1800px) {
+        width: 80%;
+      }
+      .first {
+        h1 {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 64px;
+          color: #234e4a;
+        }
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          text-align: justify;
+          width: 385px;
+          color: #000000;
+        }
+      }
+      .second {
+        position: relative;
+        left: -300px;
+        .img {
+          width: 386px;
+          height: 534px;
+          position: absolute;
+          right: -60px;
+          top: -50px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .diff {
+          width: 427px;
+          min-height: 584px;
+          position: absolute;
+          left: -60px;
+          background: #f6f8f8;
+          border: 15px solid #ff715b;
+          padding: 10px;
+          h1 {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 64px;
+            color: #234e4a;
+            padding-bottom: 0;
+            align-items: unset;
+          }
+          .flexy {
+            display: flex;
+            gap: 10px;
+            img {
+              height: 24px;
+            }
+            p {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 24px;
+              text-align: justify;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

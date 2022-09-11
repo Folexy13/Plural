@@ -1,0 +1,122 @@
+.footer {
+  background: #234e4a;
+  width: 100%;
+  min-height: 247px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    @media (max-width: 980px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    img {
+      @media (max-width: 980px) {
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    p,
+    span {
+      font-size: 10px;
+      color: #fff;
+      width: 60%;
+      line-height: 15px;
+      @media (max-width: 980px) {
+        font-size: 18px;
+        line-height: 20px;
+        width: unset;
+      }
+    }
+    h1 {
+      border-left: 6px solid #ee5d23;
+      padding-left: 40px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: #ffffff;
+      margin: 30px 0;
+      padding-bottom: 0;
+      text-align: unset;
+    }
+  }
+  .form-control {
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+    input {
+      width: calc(100% - 40px);
+      padding: 0px 20px;
+      height: 28px;
+      background: #fff;
+      outline: none;
+      border: none;
+      @media (max-width: 760px) {
+        width: 100%;
+      }
+    }
+    button {
+      position: absolute;
+      right: 40px;
+      top: 0px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: #ee5d23;
+      height: 28px;
+      width: 30px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 760px) {
+        right: 0px;
+      }
+      i {
+        font-size: smaller;
+      }
+    }
+  }
+  .diff {
+    ul {
+      li {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        margin: 10px 0;
+        i {
+          color: #ee5d23;
+        }
+      }
+    }
+  }
+}
+.second-footer {
+  background: #ff715b;
+  padding: 20px 0;
+  color: #fff;
+  .fa {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    color: #ee5d23;
+  }
+  p {
+    text-align: center;
+  }
+}
