@@ -2,7 +2,13 @@
   .footer {
     margin-top: 80px;
     @media (max-width: 600px) {
-      margin-top: 84px;
+      margin-top: 236px;
+    }
+  }
+  @media (max-width: 600px) {
+    .btn {
+      align-items: center;
+      margin: auto;
     }
   }
 }
