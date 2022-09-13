@@ -3,9 +3,12 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import xls from "../../assets/images/xls.png";
 import check from "../../assets/images/ant.png";
-import woman from "../../assets/images/img3.png";
+import img2 from "../../assets/images/x.png";
+import img3 from "../../assets/images/y.png";
+import img4 from "../../assets/images/z.png";
 import "./service.scss";
 import Button from "../Button/Button";
+import { img1 } from "../../assets/images";
 
 function Service() {
   const count = localStorage.getItem("count");
@@ -31,6 +34,9 @@ function Service() {
         <h1>Services</h1>
         <div className="dx"></div>
       </div>
+      <div className="img2">
+        <img src={img2} alt="" />
+      </div>
       <div className="grid">
         {services.map((el, i) => {
           return (
@@ -46,60 +52,241 @@ function Service() {
       </div>
       <div className="flex">
         <div className="first">
-          <img src={woman} alt="alt" />
+          <div className="img">
+            <img src={img1} alt="alt" />
+          </div>
         </div>
         <div className="second">
           <h1>{services[active].title}</h1>
-          <div className="flex">
+          <div className="flexz">
             <img src={check} alt="icon" />
             <p>
               Offer skilled care to enable people supportedby us to achieve
               their optimum state of health and well-being.
             </p>
           </div>
-          <div className="flex">
+          <div className="flexz">
             <img src={check} alt="icon" />
             <p>
               Offer skilled care to enable people supportedby us to achieve
               their optimum state of health and well-being.
             </p>
           </div>
-          <div className="flex">
+          <div className="flexz">
             <img src={check} alt="icon" />
             <p>
               Offer skilled care to enable people supportedby us to achieve
               their optimum state of health and well-being.
             </p>
           </div>
-          <div className="flex">
+          <div className="flexz">
             <img src={check} alt="icon" />
             <p>
               Offer skilled care to enable people supportedby us to achieve
               their optimum state of health and well-being.
             </p>
           </div>
-          <div className="flex">
+          <div className="flexz">
             <img src={check} alt="icon" />
             <p>
               Offer skilled care to enable people supportedby us to achieve
               their optimum state of health and well-being.
             </p>
           </div>
-          <div className="flex">
+          <div className="flexz">
             <img src={check} alt="icon" />
             <p>
               Offer skilled care to enable people supportedby us to achieve
               their optimum state of health and well-being.
             </p>
           </div>
-          <div className="flex">
+          <div className="flexz">
             <img src={check} alt="icon" />
             <p>
               Offer skilled care to enable people supportedby us to achieve
               their optimum state of health and well-being.
             </p>
           </div>
+
           <Button type={"header"} link="/appointment" />
+        </div>
+      </div>
+      <div className="xlx flex">
+        <div className="second">
+          <h1>{services[1].title}</h1>
+          <div className="flexz">
+            <img src={check} alt="icon" />
+            <p>
+              Offer skilled care to enable people supportedby us to achieve
+              their optimum state of health and well-being.
+            </p>
+          </div>
+          <div className="flexz">
+            <img src={check} alt="icon" />
+            <p>
+              Offer skilled care to enable people supportedby us to achieve
+              their optimum state of health and well-being.
+            </p>
+          </div>
+          <div className="flexz">
+            <img src={check} alt="icon" />
+            <p>
+              Offer skilled care to enable people supportedby us to achieve
+              their optimum state of health and well-being.
+            </p>
+          </div>
+          <div className="flexz">
+            <img src={check} alt="icon" />
+            <p>
+              Offer skilled care to enable people supportedby us to achieve
+              their optimum state of health and well-being.
+            </p>
+          </div>
+          <div className="flexz">
+            <img src={check} alt="icon" />
+            <p>
+              Offer skilled care to enable people supportedby us to achieve
+              their optimum state of health and well-being.
+            </p>
+          </div>
+          <div className="flexz">
+            <img src={check} alt="icon" />
+            <p>
+              Offer skilled care to enable people supportedby us to achieve
+              their optimum state of health and well-being.
+            </p>
+          </div>
+          <div className="flexz">
+            <img src={check} alt="icon" />
+            <p>
+              Offer skilled care to enable people supportedby us to achieve
+              their optimum state of health and well-being.
+            </p>
+          </div>
+
+          <Button type={"header"} link="/appointment" />
+        </div>
+      </div>
+      <div className="ddee">
+        <div className="img">
+          <img src={img4} alt="alt" />
+        </div>
+        <div className="xlx flex nnn">
+          <div className="second">
+            <h1>{services[2].title}</h1>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+
+            <Button type={"header"} link="/appointment" />
+          </div>
+        </div>
+      </div>
+      <div className="ddee">
+        <div className="img" style={{ marginTop: "72px" }}>
+          <img src={img3} alt="alt" />
+        </div>
+        <div className="xlx flex nnn">
+          <div className="second">
+            <h1>{services[3].title}</h1>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+            <div className="flexz">
+              <img src={check} alt="icon" />
+              <p>
+                Offer skilled care to enable people supportedby us to achieve
+                their optimum state of health and well-being.
+              </p>
+            </div>
+
+            <Button type={"header"} link="/appointment" />
+          </div>
         </div>
       </div>
     </div>

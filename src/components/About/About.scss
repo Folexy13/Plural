@@ -11,6 +11,9 @@
     align-items: center;
     flex-direction: column;
     margin-top: 164px;
+    @media (max-width: 980px) {
+      margin-top: 132px;
+    }
     .dx {
       border-bottom: 2px solid #fff;
     }
@@ -23,18 +26,39 @@
   .body {
     padding: 100px 0px;
     min-height: 80vh;
+    @media (max-width: 980px) {
+      min-height: unset;
+      padding: unset;
+    }
     .flex {
       width: 72%;
       margin: 80px auto;
       display: flex;
       justify-content: space-between;
+      @media (max-width: 980px) {
+        margin: 0px auto 80px auto;
+      }
       &:not(:first-child) {
         margin: 387px auto;
+        @media (max-width: 980px) {
+          margin: 0px auto;
+        }
       }
       @media (max-width: 1800px) {
         width: 80%;
+        @media (max-width: 1296px) {
+          width: 88%;
+          @media (max-width: 980px) {
+            flex-direction: column;
+            width: 100%;
+          }
+        }
       }
       .first {
+        @media (max-width: 980px) {
+          width: 80%;
+          margin: 30px auto;
+        }
         h1 {
           font-family: "Roboto";
           font-style: normal;
@@ -42,6 +66,10 @@
           font-size: 36px;
           line-height: 64px;
           color: #234e4a;
+          @media (max-width: 980px) {
+            font-size: 24px;
+            line-height: 24px;
+          }
         }
         p {
           font-family: "Poppins";
@@ -52,17 +80,32 @@
           text-align: justify;
           width: 385px;
           color: #000000;
+          @media (max-width: 1178px) {
+            width: 300px;
+            @media (max-width: 980px) {
+              width: 100%;
+            }
+          }
         }
       }
       .second {
         position: relative;
         left: -300px;
+        @media (max-width: 980px) {
+          position: unset;
+        }
         .img {
           width: 386px;
           height: 534px;
           position: absolute;
           right: -60px;
           top: -50px;
+          @media (max-width: 1178px) {
+            width: 300px;
+            @media (max-width: 980px) {
+              display: none;
+            }
+          }
           img {
             width: 100%;
             height: auto;
@@ -76,6 +119,18 @@
           background: #f6f8f8;
           border: 15px solid #ff715b;
           padding: 10px;
+          @media (max-width: 1178px) {
+            width: 380px;
+            min-height: auto;
+            @media (max-width: 980px) {
+              position: unset;
+              width: 80%;
+              margin: 30px auto;
+              @media (max-width: 600px) {
+                width: 97%;
+              }
+            }
+          }
           h1 {
             font-family: "Roboto";
             font-style: normal;
@@ -103,6 +158,33 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+.img2 {
+  @media (max-width: 980px) {
+    width: 100vw;
+    height: 377px;
+    margin-bottom: 600px;
+    img {
+      width: 100%;
+      height: auto;
+      @media (max-width: 670px) {
+        height: 100%;
+      }
+    }
+  }
+  @media (max-width: 890px) {
+    margin-bottom: 500px;
+    @media (max-width: 854px) {
+      margin-bottom: 450px;
+    }
+    @media (max-width: 806px) {
+      margin-bottom: 380px;
+      @media (max-width: 670px) {
+        margin-bottom: 0;
       }
     }
   }

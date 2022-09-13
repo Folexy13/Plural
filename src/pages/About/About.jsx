@@ -1,9 +1,14 @@
-import React from "react";
-import { AboutComp, Footer, Header } from "../../components";
+import React, { useState } from "react";
+import { AboutComp, Footer, Header, Sidebar } from "../../components";
 const About = (props) => {
+  const [show, setShow] = useState(false);
+  const onclick = () => {
+    setShow(!show);
+  };
   return (
     <>
-      <Header />
+      <Sidebar show={show} />
+      <Header show={show} click={onclick} />
       <AboutComp />
       <Footer />
     </>

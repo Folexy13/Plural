@@ -12,6 +12,9 @@
     width: 80%;
     margin: 0 auto;
     padding: 10px;
+    @media (max-width: 980px) {
+      display: none;
+    }
   }
 
   nav {
@@ -42,6 +45,11 @@
       }
     }
 
+    .logo {
+      @media (max-width: 980px) {
+        transform: scale(0.7);
+      }
+    }
     ul {
       width: 80%;
       margin: 0 auto;

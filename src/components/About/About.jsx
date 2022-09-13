@@ -5,6 +5,8 @@ import aim from "../../assets/images/aim.png";
 import obj from "../../assets/images/obj.png";
 import ethos from "../../assets/images/ethos.png";
 import check from "../../assets/images/ant.png";
+import { img2, img3 } from "../../assets/images/index";
+import img1 from "../../assets/images/ethos.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -22,6 +24,9 @@ const About = (props) => {
         </div>
         <h1>About Us</h1>
         <div className="dx"></div>
+      </div>
+      <div className="img2">
+        <img src={img2} alt="" />
       </div>
       <div className="body">
         <div className="flex">
@@ -52,6 +57,7 @@ const About = (props) => {
             <div className="img">
               <img src={aim} alt="alt" />
             </div>
+
             <div className="diff">
               <h1>Our aims include</h1>
               <div className="dy"></div>
@@ -92,6 +98,9 @@ const About = (props) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="img2">
+          <img src={img3} alt="" />
         </div>
         <div className="flex">
           <div
@@ -161,6 +170,9 @@ const About = (props) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="img2">
+          <img src={img1} alt="" />
         </div>
         <div className="flex">
           <div

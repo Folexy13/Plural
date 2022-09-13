@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Footer } from "../../components";
+import { Footer, Sidebar } from "../../components";
 import "./styles.scss";
 import "animate.css/animate.min.css";
 import { AnimatePresence } from "framer-motion";
@@ -9,6 +9,11 @@ import { Preloader } from "../../components";
 
 function LandingPage() {
   const [loading, setLoading] = useState(true);
+  const [show, setShow] = useState(false);
+  const onclick = () => {
+    setShow(!show);
+  };
+
   useEffect(() => {
     if (loading) {
       setTimeout(() => {
@@ -21,7 +26,8 @@ function LandingPage() {
       <AnimatePresence exitBeforeEnter onExitComplete={() => setLoading(false)}>
         {loading && <Preloader />}
       </AnimatePresence>
-      {!loading && <Header />}
+      <Sidebar show={show} />
+      {!loading && <Header show={show} click={onclick} />}
       <Hero />
       <MissionCard />
       <MultiCard />

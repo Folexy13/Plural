@@ -11,6 +11,7 @@ import Contact from "./Contact/Contact";
 import Preloader from "./Preloader/Preloader";
 import AboutComp from "./About/About";
 import { Link } from "react-router-dom";
+import Sidebar from "./sidebar/Sidebar";
 
 export {
   Button,
@@ -26,6 +27,7 @@ export {
   Contact,
   Preloader,
   AboutComp,
+  Sidebar,
 };
 
 const style = {
