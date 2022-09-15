@@ -229,7 +229,7 @@ function Service() {
         </div>
       </div>
       <div className="ddee">
-        <div className="img" style={{ marginTop: "241px" }}>
+        <div className="img">
           <img src={img3} alt="alt" />
         </div>
         <div className="xlx flex nnn">

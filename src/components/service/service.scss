@@ -107,7 +107,8 @@
         @media (max-width: 650px) {
           width: 85%;
           margin: 10px auto;
-          margin-bottom: 171px;
+          // margin-bottom: 171px;
+          height: unset;
         }
       }
       h1 {
@@ -169,7 +170,7 @@
     height: 424px;
     width: 100%;
     @media (max-width: 600px) {
-      margin-top: 520px;
+      // margin-top: 520px;
     }
     img {
       height: 100% !important;
