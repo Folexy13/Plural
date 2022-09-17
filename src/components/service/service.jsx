@@ -54,7 +54,7 @@ function Service() {
         })}
       </div>
       <div className="flex">
-        <div className="first">
+        <div className="first lx">
           <div className="img">
             <img src={img1} alt="alt" />
           </div>

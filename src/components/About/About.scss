@@ -162,6 +162,9 @@
             text-align: unset;
             @media (max-width: 450px) {
               font-size: 19px;
+              @media (max-width: 380px) {
+                font-size: 16px;
+              }
             }
           }
           .flexy {
