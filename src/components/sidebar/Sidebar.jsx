@@ -23,7 +23,7 @@ const Sidebar = ({ show }) => {
                 <Link to="/services">Service</Link>
               </li>
             </ul>
-            <Button type={"header"} />
+            <Button type={"header"} link="/appointment" />
           </div>
         </div>
       )}

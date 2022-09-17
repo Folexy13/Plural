@@ -5,9 +5,27 @@
   position: relative;
   z-index: 10;
   margin-top: 164px;
+  .img {
+    width: calc(72% + 76px);
+    margin: 20px auto;
+    display: none;
+    img {
+      width: 100%;
+    }
+  }
   @media (max-width: 980px) {
     margin-top: 132px;
     display: block;
+    height: unset;
+    .img {
+      display: block;
+    }
+    .cnt {
+      @media (max-width: 600px) {
+        background: transparent;
+        margin-top: 60px;
+      }
+    }
   }
   .hero-title {
     padding: 0px;
@@ -15,7 +33,6 @@
     flex-direction: column;
     justify-content: center;
     top: 0;
-    // align-items: center;
     background: #234e4a;
     padding-left: 8%;
     border-right: 16px solid #ff715b;
@@ -34,6 +51,9 @@
       padding-left: unset;
       height: calc(100vh - 132px);
       border-right: 0;
+      @media (max-width: 600px) {
+        justify-content: unset;
+      }
     }
     h1 {
       font-family: "Roboto";
@@ -54,7 +74,10 @@
             font-size: 24px;
             line-height: 24px;
             @media (max-width: 480px) {
-              font-size: 18px;
+              font-size: 40px;
+              line-height: 40px;
+              text-align: center;
+              margin-top: 40px;
             }
           }
         }
@@ -85,6 +108,9 @@
   .hero-title2 {
     width: 50%;
     height: calc(100vh - 150px);
+    @media (max-width: 980px) {
+      height: unset;
+    }
     .carousel {
       @media (max-width: 980px) {
         display: none;

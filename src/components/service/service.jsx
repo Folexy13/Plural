@@ -4,6 +4,8 @@ import { useState } from "react";
 import xls from "../../assets/images/xls.png";
 import check from "../../assets/images/ant.png";
 import img2 from "../../assets/images/x.png";
+import xls2 from "../../assets/images/line2.png";
+
 import img3 from "../../assets/images/y.png";
 import img4 from "../../assets/images/z.png";
 import "./service.scss";
@@ -29,7 +31,8 @@ function Service() {
     <div className="service" id="service">
       <div className="heading">
         <div className="line">
-          <img src={xls} alt="" />
+          <img src={xls} alt="" className="desktop" />
+          <img src={xls2} alt="" className="mobile" />
         </div>
         <h1>Services</h1>
         <div className="dx"></div>
@@ -172,7 +175,7 @@ function Service() {
           <img src={img4} alt="alt" />
         </div>
         <div className="xlx flex nnn">
-          <div className="second">
+          <div className="second" style={{ marginTop: 60 }}>
             <h1>{services[2].title}</h1>
             <div className="flexz">
               <img src={check} alt="icon" />
@@ -233,7 +236,7 @@ function Service() {
           <img src={img3} alt="alt" />
         </div>
         <div className="xlx flex nnn">
-          <div className="second">
+          <div className="second" style={{ marginTop: 60 }}>
             <h1>{services[3].title}</h1>
             <div className="flexz">
               <img src={check} alt="icon" />

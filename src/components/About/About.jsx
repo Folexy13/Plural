@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import xls from "../../assets/images/xls.png";
+import xls2 from "../../assets/images/line2.png";
 import "./About.scss";
 import aim from "../../assets/images/aim.png";
 import obj from "../../assets/images/obj.png";
@@ -9,6 +10,7 @@ import { img2, img3 } from "../../assets/images/index";
 import img1 from "../../assets/images/ethos.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Button from "../Button/Button";
 
 const About = (props) => {
   useEffect(() => {
@@ -20,7 +22,8 @@ const About = (props) => {
     <div className="about" id="service">
       <div className="heading">
         <div className="line">
-          <img src={xls} alt="" />
+          <img src={xls} alt="" className="desktop" />
+          <img src={xls2} alt="" className="mobile" />
         </div>
         <h1>About Us</h1>
         <div className="dx"></div>
@@ -240,6 +243,9 @@ const About = (props) => {
                   their optimum state of health and well-being.
                 </p>
               </div>
+            </div>
+            <div className="new">
+              <Button type={"header"} link="/appointment" />
             </div>
           </div>
         </div>

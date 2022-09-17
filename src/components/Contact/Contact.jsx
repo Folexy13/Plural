@@ -3,6 +3,9 @@ import "./Contact.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import appoint from "../../assets/images/appoint.png";
+import appoint2 from "../../assets/images/appoint2.png";
+import xls2 from "../../assets/images/line2.png";
+
 import xls from "../../assets/images/xls.png";
 const Contact = () => {
   useEffect(() => {
@@ -15,7 +18,8 @@ const Contact = () => {
       <div className="contact" id="contact">
         <div className="heading">
           <div className="line">
-            <img src={xls} alt="" />
+            <img src={xls} alt="" className="desktop" />
+            <img src={xls2} alt="" className="mobile" />
           </div>
           <h1>Book Appointment</h1>
           <div className="dx"></div>
@@ -28,7 +32,8 @@ const Contact = () => {
             data-aos-easing="ease-out"
             data-aos-duration="1400"
           >
-            <img src={appoint} alt="" />
+            <img src={appoint} alt="" className="desk" />
+            <img src={appoint2} alt="" className="mob" />
           </div>
           <div
             className="second"

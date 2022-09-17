@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import whiteLogo from "../../assets/images/whiteLogo.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { FlexIcon } from "..";
 
 const Footer = () => {
   return (
@@ -53,6 +54,7 @@ const Footer = () => {
                   <i class="fa fa-paper-plane" aria-hidden="true"></i>
                 </button>
               </form>
+              <FlexIcon />
             </div>
           </AnimationOnScroll>
         </div>

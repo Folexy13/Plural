@@ -228,3 +228,14 @@
     }
   }
 }
+.mobile {
+  display: none;
+  @media (max-width: 600px) {
+    display: block;
+  }
+}
+.desktop {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

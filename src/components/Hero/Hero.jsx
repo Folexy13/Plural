@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 import a from "../../assets/images/a.png";
 import b from "../../assets/images/b.png";
 import c from "../../assets/images/c.png";
+import carousel from "../../assets/images/xbd.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Hero = () => {
@@ -58,6 +59,9 @@ const Hero = () => {
             <img src={c} alt="hh" />
           </div>
         </Carousel>
+      </div>
+      <div className="img">
+        <img src={carousel} alt="" />
       </div>
     </div>
   );
