@@ -10,7 +10,7 @@ import xls from "../../assets/images/xls.png";
 const Contact = () => {
   useEffect(() => {
     Aos.init({
-      disable: window.innerWidth < 1251,
+      disable: window.innerWidth < 201,
     });
   });
   return (

@@ -12,9 +12,8 @@ import "aos/dist/aos.css";
 const Hero = () => {
   useEffect(() => {
     Aos.init({
-      disable: window.innerWidth < 1251,
+      disable: window.innerWidth < 200,
     });
-    Aos.init();
   });
   return (
     <div className="hero-section">
@@ -60,7 +59,13 @@ const Hero = () => {
           </div>
         </Carousel>
       </div>
-      <div className="img">
+      <div
+        className="img"
+        data-aos="fade-down-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <img src={carousel} alt="" />
       </div>
     </div>
