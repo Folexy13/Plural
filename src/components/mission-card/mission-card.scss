@@ -35,6 +35,10 @@
       padding: 10px 0 0 0;
       margin: 10px 0 20px 0;
       width: fit-content;
+      @media (max-width: 430px) {
+        font-size: 28px;
+        line-height: unset;
+      }
     }
     p {
       font-family: "Poppins";

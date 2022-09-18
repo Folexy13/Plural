@@ -14,9 +14,7 @@ import Button from "../Button/Button";
 
 const About = (props) => {
   useEffect(() => {
-    Aos.init({
-      disable: window.innerWidth < 1251,
-    });
+    Aos.init();
   });
   return (
     <div className="about" id="service">

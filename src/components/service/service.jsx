@@ -22,9 +22,7 @@ function Service() {
     { title: "Health consultation ", id: 4 },
   ];
   useEffect(() => {
-    Aos.init({
-      disable: window.innerWidth < 1251,
-    });
+    Aos.init();
     return () => localStorage.removeItem("count");
   });
   return (
@@ -59,7 +57,12 @@ function Service() {
             <img src={img1} alt="alt" />
           </div>
         </div>
-        <div className="second">
+        <div
+          className="second"
+          data-aos="fade-up-right"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h1>{services[active].title}</h1>
           <div className="flexz">
             <img src={check} alt="icon" />
@@ -115,7 +118,12 @@ function Service() {
         </div>
       </div>
       <div className="xlx flex">
-        <div className="second">
+        <div
+          className="second"
+          data-aos="fade-up-right"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h1>{services[1].title}</h1>
           <div className="flexz">
             <img src={check} alt="icon" />
@@ -175,7 +183,13 @@ function Service() {
           <img src={img4} alt="alt" />
         </div>
         <div className="xlx flex nnn">
-          <div className="second" style={{ marginTop: 60 }}>
+          <div
+            className="second"
+            style={{ marginTop: 60 }}
+            data-aos="fade-up-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <h1>{services[2].title}</h1>
             <div className="flexz">
               <img src={check} alt="icon" />
@@ -236,7 +250,13 @@ function Service() {
           <img src={img3} alt="alt" />
         </div>
         <div className="xlx flex nnn">
-          <div className="second" style={{ marginTop: 60 }}>
+          <div
+            className="second"
+            style={{ marginTop: 60 }}
+            data-aos="fade-up-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <h1>{services[3].title}</h1>
             <div className="flexz">
               <img src={check} alt="icon" />

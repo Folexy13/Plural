@@ -16,9 +16,7 @@ function MissionCard() {
     localStorage.setItem("count", id);
   };
   useEffect(() => {
-    Aos.init({
-      disable: window.innerWidth < 1251,
-    });
+    Aos.init();
   });
   return (
     <>

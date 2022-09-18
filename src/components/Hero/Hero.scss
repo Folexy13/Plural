@@ -23,7 +23,7 @@
     .cnt {
       @media (max-width: 600px) {
         background: transparent;
-        margin-top: 60px;
+        // margin-top: 60px;
       }
     }
   }
@@ -52,7 +52,7 @@
       height: calc(100vh - 132px);
       border-right: 0;
       @media (max-width: 600px) {
-        justify-content: unset;
+        // justify-content: unset;
       }
     }
     h1 {
@@ -77,7 +77,7 @@
               font-size: 40px;
               line-height: 40px;
               text-align: center;
-              margin-top: 40px;
+              margin-top: -10px;
             }
           }
         }
