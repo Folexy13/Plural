@@ -15,8 +15,10 @@ const Contact = () => {
   const [service, setService] = useState("");
   const [date, setDate] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
     let payload = {
       name,
       phone,
@@ -27,6 +29,7 @@ const Contact = () => {
     };
     if (!name || !phone || !email || !service || !date || !message) {
       Swal.fire("Error!", "All Fields are required", "error");
+      setLoading(false);
       return;
     }
     axios
@@ -41,6 +44,7 @@ const Contact = () => {
               setService("");
               setMessage("");
               setDate("");
+              setLoading(false);
             }
           });
         } else {
@@ -138,7 +142,9 @@ const Contact = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
-              <button type="submit">Send Message</button>
+              <button type="submit" disabled={loading}>
+                {loading ? "Submitting..." : "Send Message"}
+              </button>
             </form>
           </div>
         </div>

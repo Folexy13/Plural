@@ -8,10 +8,11 @@ import Swal from "sweetalert2";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
     let payload = { email };
-
+    setLoading(true);
     axios
       .post(`https://cr-news-api.herokuapp.com/subscribe`, payload)
       .then((res) => {
@@ -19,6 +20,7 @@ const Footer = () => {
           Swal.fire("Sucessful!", res.data.message, "success").then((res) => {
             if (res.isConfirmed) {
               setEmail("");
+              setLoading(false);
             }
           });
         } else {
@@ -74,7 +76,7 @@ const Footer = () => {
               <form className="form-control" onSubmit={handleSubmit}>
                 <input type="email" />
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <i class="fa fa-paper-plane" aria-hidden="true"></i>
                 </button>
               </form>
