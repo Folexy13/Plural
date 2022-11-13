@@ -34,9 +34,9 @@
     @media (max-width: 980px) {
       margin-top: 132px;
     }
-    .dx {
-      border-bottom: 2px solid #fff;
-    }
+    // .dx {
+    //   border-bottom: 2px solid #fff;
+    // }
   }
   .dy {
     border-bottom: 2px solid #ff715b;
@@ -116,7 +116,7 @@
         }
         .img {
           width: 386px;
-          height: 534px;
+          height: 520px;
           position: absolute;
           right: -60px;
           top: -50px;
@@ -133,12 +133,13 @@
         }
         .diff {
           width: 427px;
-          min-height: 584px;
+          min-height: 354px;
           position: absolute;
           left: -60px;
           background: #f6f8f8;
           border: 15px solid #ff715b;
-          padding: 10px;
+          border-radius: 12px;
+          padding: 20px 30px;
           @media (max-width: 1178px) {
             width: 380px;
             min-height: auto;

@@ -26,8 +26,8 @@ const Hero = () => {
       >
         <h1>Welcome to Plural Health Care Ltd</h1>
         <p>
-          We believe in giving you the best medic care,you will never get
-          anywhere
+          Plural health care is a care provider solution that allows you to get
+          the best care in your home.
         </p>
         <Button link={"/appointment"} />
       </div>

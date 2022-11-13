@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.scss";
 import whiteLogo from "../../assets/images/whiteLogo.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FlexIcon } from "..";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let payload = { email };
+
+    axios
+      .post(`https://cr-news-api.herokuapp.com/subscribe`, payload)
+      .then((res) => {
+        if (res.data.status) {
+          Swal.fire("Sucessful!", res.data.message, "success").then((res) => {
+            if (res.isConfirmed) {
+              setEmail("");
+            }
+          });
+        } else {
+          throw res.data;
+        }
+      })
+      .catch((err) => {
+        Swal.fire("Error!", err.message, "error");
+      });
+  };
   return (
     <>
       <div className="footer">
@@ -47,7 +71,7 @@ const Footer = () => {
                 Get healthy news, tip and solutions to your problems from our
                 experts.
               </p>
-              <form className="form-control">
+              <form className="form-control" onSubmit={handleSubmit}>
                 <input type="email" />
 
                 <button type="submit">

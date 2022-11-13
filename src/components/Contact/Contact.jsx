@@ -1,13 +1,56 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import appoint from "../../assets/images/appoint.png";
 import appoint2 from "../../assets/images/appoint2.png";
 import xls2 from "../../assets/images/line2.png";
-
+import Swal from "sweetalert2";
+import axios from "axios";
 import xls from "../../assets/images/xls.png";
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [service, setService] = useState("");
+  const [date, setDate] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let payload = {
+      name,
+      phone,
+      email,
+      service,
+      date,
+      message,
+    };
+    if (!name || !phone || !email || !service || !date || !message) {
+      Swal.fire("Error!", "All Fields are required", "error");
+      return;
+    }
+    axios
+      .post(`https://cr-news-api.herokuapp.com/book-appointment`, payload)
+      .then((res) => {
+        if (res.data.status) {
+          Swal.fire("Sucessful!", res.data.message, "success").then((res) => {
+            if (res.isConfirmed) {
+              setEmail("");
+              setName("");
+              setPhone("");
+              setService("");
+              setMessage("");
+              setDate("");
+            }
+          });
+        } else {
+          throw res.data;
+        }
+      })
+      .catch((err) => {
+        Swal.fire("Error!", err.message, "error");
+      });
+  };
   useEffect(() => {
     Aos.init({
       disable: window.innerWidth < 201,
@@ -43,20 +86,48 @@ const Contact = () => {
             data-aos-duration="1400"
           >
             <h3>Send us a message</h3>
-            <form action="">
-              <input type="text" placeholder="Name" required />
-              <input type="text" placeholder="Phone Number" required />
-              <input type="email" placeholder="Email Address" required />
-              <select name="" id="">
-                <option value="" disabled>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                required
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <select
+                name=""
+                id=""
+                onChange={(e) => setService(e.target.value)}
+              >
+                <option value="" disabled selected>
                   Select Service
                 </option>
-                <option value="">Home Care</option>
-                <option value="">Care Services</option>
-                <option value="">Child Care</option>
-                <option value="">Health Consultation</option>
+                <option value="Home Care">Home Care</option>
+                <option value="Care Service">Care Services</option>
+                <option value="Child Care">Child Care</option>
+                <option value="Health Consultation">Health Consultation</option>
               </select>
-              <input type="date" placeholder="Email Address" required />
+              <input
+                type="date"
+                placeholder="Email Address"
+                required
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+              />
               <textarea
                 name=""
                 id=""
@@ -64,6 +135,8 @@ const Contact = () => {
                 rows="5"
                 required
                 placeholder="Enter Your message..."
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
               <button type="submit">Send Message</button>
             </form>

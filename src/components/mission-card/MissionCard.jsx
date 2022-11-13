@@ -30,10 +30,12 @@ function MissionCard() {
         <div className="first">
           <h1>Our Mission</h1>
           <p>
-            At Plural Health Care Limited we believe dignity and respect are two
-            of the most valuable commodities in the world. There is no higher
-            praise for us than the smile of a happy patient, the thanks of a
-            relieved client, or the revitalized embrace of an engaged resident.
+            At plural health care , we are dedicated to providing high - quality
+            care - giving solutions that respect the dignity and independence of
+            our clients. We believe that everyone deserves to receive the best
+            possible care, and we are committed to providing it. With
+            compassion, professionalism, and a commitment to excellence, we
+            strive to make a positive difference in the lives of those we serve.
           </p>
         </div>
       </div>
@@ -46,7 +48,9 @@ function MissionCard() {
         >
           <h1>Every Care You Need</h1>
           <div className="dx"></div>
-          <p>We offer the best care Service</p>
+          <p>
+            Simple, fast and affordable health care for every stage of life.
+          </p>
         </div>
         <div className="grid">
           <div
@@ -60,7 +64,7 @@ function MissionCard() {
               <h2>Home Care</h2>
               <p>
                 To make sure you receive the highest standards of care services
-                that is person-centred/personalised.
+                that is person -centred/personalised.
               </p>
               <Link
                 to="/services"
@@ -82,8 +86,8 @@ function MissionCard() {
             <div className="txt">
               <h2>Care Services</h2>
               <p>
-                To make sure you receive the highest standards of care services
-                that is person-centred/personalised.
+                Gives people real choice and control by helping them find a care
+                service that is right for them.
               </p>
               <Link
                 to="/services"
@@ -105,8 +109,9 @@ function MissionCard() {
             <div className="txt">
               <h2>Child Care</h2>
               <p>
-                To make sure you receive the highest standards of care services
-                that is person-centred/personalised.
+                We offer a high standard of care – and service, with
+                personalised attention to your needs as parents. Our services
+                are tailored to you and your child's needs as they grow up.
               </p>
               <Link
                 to="/services"
@@ -128,8 +133,10 @@ function MissionCard() {
             <div className="txt">
               <h2>Health Consultation</h2>
               <p>
-                To make sure you receive the highest standards of care services
-                that is person-centred/personalised.
+                When you require a service to help with your health and well-
+                being, we can help you. We offer a range of health care services
+                to give you the right support in the right place at the right
+                time.
               </p>
               <Link
                 to="/services"
@@ -164,9 +171,8 @@ function MissionCard() {
             <img src={icon1} alt="" />
             <h1>Book Appointment</h1>
             <p>
-              To make sure you receive the highest standards of care services
-              that is person-centred/personalised, meets your outcomes and
-              enable you to achieve to maintain independent living.
+              One of the best ways to easily find, track care services and
+              schedule your appointments online.
             </p>
           </div>
           <div
@@ -178,9 +184,10 @@ function MissionCard() {
             <img src={icon2} alt="" />
             <h1>Our Staff Come To Your House</h1>
             <p>
-              To make sure you receive the highest standards of care services
-              that is person-centred/personalised, meets your outcomes and
-              enable you to achieve to maintain independent living.
+              With our Health Care Home Visits Services in Plural, you can
+              continue living your life at home. Our health professionals will
+              visit you at home and provide treatments and exercises customized
+              to meet your specific needs.
             </p>
           </div>
           <div
@@ -192,9 +199,8 @@ function MissionCard() {
             <img src={icon3} alt="" />
             <h1>Enjoy Our Servive and Make Payment</h1>
             <p>
-              To make sure you receive the highest standards of care services
-              that is person-centred/personalised, meets your outcomes and
-              enable you to achieve to maintain independent living.
+              We will take care of all things for you, so you can concentrate on
+              enjoying your service and making payment seamlessly.
             </p>
           </div>
         </div>

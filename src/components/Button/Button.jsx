@@ -5,7 +5,7 @@ const Button = ({ type, label, hasArrow, link }) => {
   if (type === "header") {
     return (
       <a href={link} className="btn">
-        <button className="ctn2">Book an Appointment</button>
+        <button className="ctn2">Book Appointment</button>
       </a>
     );
   }
@@ -20,7 +20,7 @@ const Button = ({ type, label, hasArrow, link }) => {
 };
 
 Button.defaultProps = {
-  label: "Book an Appointment",
+  label: "Book Appointment",
   link: "#",
 };
 export default Button;

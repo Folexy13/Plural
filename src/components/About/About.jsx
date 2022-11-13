@@ -40,13 +40,9 @@ const About = (props) => {
             <h1>Aims</h1>
             <div className="dy"></div>
             <p>
-              We aim to provide the highest possible standards of care to all
-              our clients. Our person-centred care approach is promoted to meet
-              each of our service user’s unique and lifestyle needs. We aim to
-              provide a homely environment where care and support is provided
-              involving all our clients, their relatives, friends, medical
-              professionals and other relevant personnel as appropriate to meet
-              the essential needs of our clients.
+              Our aim is to provide the highest possible standards of care to
+              all our clients, enabling each person to live a fulfilling and
+              independent life in their own home for as long as possible.
             </p>
           </div>
           <div
@@ -65,36 +61,23 @@ const About = (props) => {
               <div className="flexy">
                 <img src={check} alt="alt" />
                 <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
+                  Reclaim your future through an integrated approach to help
+                  restore you to full health, independence and well-being.
                 </p>
               </div>
               <div className="flexy">
                 <img src={check} alt="alt" />
                 <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
+                  Our goal is to help each individual return to their highest
+                  quality of life by providing a range of care services for all
+                  ages.
                 </p>
               </div>
               <div className="flexy">
                 <img src={check} alt="alt" />
                 <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
-                </p>
-              </div>
-              <div className="flexy">
-                <img src={check} alt="alt" />
-                <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
-                </p>
-              </div>
-              <div className="flexy">
-                <img src={check} alt="alt" />
-                <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
+                  Respect and encourage the right of independence of all Service
+                  Users.
                 </p>
               </div>
             </div>
@@ -113,13 +96,10 @@ const About = (props) => {
             <h1>Objectives</h1>
             <div className="dy"></div>
             <p>
-              We aim to provide the highest possible standards of care to all
-              our clients. Our person-centred care approach is promoted to meet
-              each of our service user’s unique and lifestyle needs. We aim to
-              provide a homely environment where care and support is provided
-              involving all our clients, their relatives, friends, medical
-              professionals and other relevant personnel as appropriate to meet
-              the essential needs of our clients.
+              We are a leading medium size care provider with a focus on the
+              needs of our service users. We ensure that we recruit experienced
+              and passionate staff because our priority is to make sure that we
+              provide exemplary long-term care for all our clients.
             </p>
           </div>
           <div
@@ -137,36 +117,24 @@ const About = (props) => {
               <div className="flexy">
                 <img src={check} alt="alt" />
                 <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
+                  Support Children, Elderly and Disabled Adults who needs full
+                  or some assistance to meet their daily living needs which they
+                  are unable to meet independently due to ill health, physical
+                  disabilities, ageing or for recuperation.
                 </p>
               </div>
               <div className="flexy">
                 <img src={check} alt="alt" />
                 <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
+                  Assist our clients to develop their own individualised support
+                  plan.
                 </p>
               </div>
               <div className="flexy">
                 <img src={check} alt="alt" />
                 <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
-                </p>
-              </div>
-              <div className="flexy">
-                <img src={check} alt="alt" />
-                <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
-                </p>
-              </div>
-              <div className="flexy">
-                <img src={check} alt="alt" />
-                <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
+                  Empower our clients by enabling them to choose their support
+                  workers
                 </p>
               </div>
             </div>
@@ -185,13 +153,10 @@ const About = (props) => {
             <h1>Ethos and Philosophy</h1>
             <div className="dy"></div>
             <p>
-              We aim to provide the highest possible standards of care to all
-              our clients. Our person-centred care approach is promoted to meet
-              each of our service user’s unique and lifestyle needs. We aim to
-              provide a homely environment where care and support is provided
-              involving all our clients, their relatives, friends, medical
-              professionals and other relevant personnel as appropriate to meet
-              the essential needs of our clients.
+              We work hard to promote independent living by supporting and
+              encouraging our clients to maintain and enhance their abilities.
+              We believe that our clients views are important and should be
+              listened and responded to.
             </p>
           </div>
           <div
@@ -209,36 +174,24 @@ const About = (props) => {
               <div className="flexy">
                 <img src={check} alt="alt" />
                 <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
+                  Promoting independent living, working within your range of
+                  abilities and competencies.
                 </p>
               </div>
               <div className="flexy">
                 <img src={check} alt="alt" />
                 <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
+                  Ensuring that your confidential information is protected at
+                  all times and only shared with others strictly in accordance
+                  with our policy on confidentiality.
                 </p>
               </div>
               <div className="flexy">
                 <img src={check} alt="alt" />
                 <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
-                </p>
-              </div>
-              <div className="flexy">
-                <img src={check} alt="alt" />
-                <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
-                </p>
-              </div>
-              <div className="flexy">
-                <img src={check} alt="alt" />
-                <p>
-                  Offer skilled care to enable people supported by us to achieve
-                  their optimum state of health and well-being.
+                  Encourage our clients to complain about anything they feel is
+                  unfair or unjust, and to have that complaint listened and
+                  responded to.
                 </p>
               </div>
             </div>

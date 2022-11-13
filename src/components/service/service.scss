@@ -28,9 +28,9 @@
     @media (max-width: 980px) {
       margin-top: 132px;
     }
-    .dx {
-      border-bottom: 2px solid #fff;
-    }
+    // .dx {
+    //   border-bottom: 2px solid #fff;
+    // }
   }
   .grid {
     width: 60%;
@@ -89,6 +89,7 @@
       img {
         width: 100%;
         height: auto;
+    border-radius: 12px;
       }
     }
     .second {
@@ -118,7 +119,7 @@
         font-size: 36px;
         line-height: 64px;
         color: #234e4a;
-        border-bottom: 2px solid #ff715b;
+        // border-bottom: 2px solid #ff715b;
         width: fit-content;
         margin-bottom: 10px;
         @media (max-width: 600px) {
@@ -143,6 +144,7 @@
         }
         img {
           height: 24px;
+          
         }
         p {
           font-family: "Poppins";

@@ -46,10 +46,9 @@ function MultiCard({ type }) {
           <Slider {...settings}>
             <div className="card">
               <q />
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua minim
-              veniam quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat Duis aute irure dolor in reprehenderit"
+              plural health care has the best customer service and they are very
+              reliable and trustworthy. i have not had any issues with them and
+              would recommend them to anyone.
               <div className="flex">
                 <img src={james} alt="" />
                 <div>
