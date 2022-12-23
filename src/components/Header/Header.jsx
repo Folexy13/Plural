@@ -16,7 +16,7 @@ const Header = ({ click, show }) => {
     <div className="header">
       <div className="flex-header">
         <p>info@pluralhealthcareltd.com</p>
-        <p>For Consultation, Call: +44 7733718474</p>
+        <p>For Consultation, Call:+44 7907 538847</p>
       </div>
       <nav>
         <ul>

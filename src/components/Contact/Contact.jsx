@@ -52,7 +52,11 @@ const Contact = () => {
         }
       })
       .catch((err) => {
-        Swal.fire("Error!", err.message, "error");
+        Swal.fire("Error!", err.message, "error").then((res) => {
+          if (res.isConfirmed) {
+            setLoading(false);
+          }
+        });
       });
   };
   useEffect(() => {

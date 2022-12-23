@@ -28,7 +28,11 @@ const Footer = () => {
         }
       })
       .catch((err) => {
-        Swal.fire("Error!", err.message, "error");
+        Swal.fire("Error!", err.message, "error").then((res) => {
+          if (res.isConfirmed) {
+            setLoading(false);
+          }
+        });
       });
   };
   return (
@@ -57,11 +61,13 @@ const Footer = () => {
                 </li>
                 <li>
                   <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                  <span> Info@pluralhealthcareltd.co.uk</span>
+                  <a href="mailto:info@pluralhealthcareltd.com">
+                    info@pluralhealthcareltd.com
+                  </a>
                 </li>
                 <li>
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span> +447733718474</span>
+                  <span> +44 7907 538847</span>
                 </li>
               </ul>
             </div>
